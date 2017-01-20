@@ -1,0 +1,18 @@
+
+<?xml version="1.0"?>
+<cross-domain-policy>
+    <site-control permitted-cross-domain-policies="master-only"/>
+    <allow-access-from domain="player.b8yy.com" />
+    <allow-access-from domain="player.90ys.cc" />
+    <allow-access-from domain="www.9dyy.com" /> 
+    <allow-access-from domain="9dyy.com" /> 
+    <allow-access-from domain="52t90dy.duapp.com" />
+    <allow-access-from domain="player.t90dy.com" />
+    <allow-access-from domain="api.wang988.com" secure="false"/>
+    <allow-access-from domain="player.wang988.com" secure="false"/>
+    <allow-access-from domain="*.wang988.com" secure="false"/>
+
+    <allow-access-from domain="9dyyss.duapp.com"/>
+    <allow-access-from domain="t90dyss.duapp.com"/>
+
+</cross-domain-policy>

@@ -1,0 +1,39 @@
+永久无广告 无弹窗  无收费 无任何理由  绝对好用  
+
+支持：爱奇艺 芒果 优酷 土豆 搜狐 pptv  乐视
+
+---------------------------------------------------------------------
+通用解析接口 http://www.200919.com/jiexi/vip.php?url=
+
+爱奇艺http://www.200919.com/jiexi/vip.php?url=http://www.iqiyi.com/v_19rr99zvcw.html
+
+pptv http://www.200919.com/jiexi/vip.php?url=http://v.pptv.com/show/BUuZFn7kVJL1c9s.html
+
+芒果 http://www.200919.com/jiexi/vip.php?url=http://www.mgtv.com/b/302031/3693860.html
+
+优酷 http://www.200919.com/jiexi/vip.php?url=http://v.youku.com/v_show/id_XMTgxMTEwMDU2OA==.html
+
+土豆 http://www.200919.com/jiexi/vip.php?url=http://www.tudou.com/albumplay/JcwDkjffh34/1kYo5sAVRPs.html
+
+搜狐 http://www.200919.com/jiexi/vip.php?url=http://tv.sohu.com/20151103/n425072246.shtml
+
+乐视 http://www.200919.com/jiexi/vip.php?url=http://www.le.com/ptv/vplay/27011123.html
+
+调试演示 http://www.200919.com/jiexi/vip.php?url=http://v.pptv.com/show/BUuZFn7kVJL1c9s.html
+
+站内演示 http://www.200919.com/video/?4726-0-0.html
+
+--------------------------------------------------------------------
+C值接口 永久可用 站长需要的自己收藏起啦吧 
+如果演示地址失效 肯定是C值和谐  请更换C值即可
+
+电脑+手机  
+C值接口：http://www.200919.com/jiexi/c.php?vid=
+演示地址：http://www.200919.com/jiexi/c.php?vid=CMzY3NjgwNA==
+
+电脑超清C值  文件比较大 所以不建议使用 视频的720P和1080P
+C值接口：http://www.200919.com/jiexi/c/jiexi.php?url=
+演示地址：http://www.200919.com/jiexi/c/jiexi.php?url=CMzY3NjgwNA==
+
+
+

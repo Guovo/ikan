@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="gb2312"?>
+<skin>
+	<Name Desc="模板名称">绿色视觉</Name>
+	<Version Desc="适用版本">1.3Beta</Version>
+	<Author Desc="模板作者">IT平民</Author>
+	<Website Desc="网址">http://www.sdcms.cn</Website>
+	<Photo Desc="缩略图">../upfile/sdcms.jpg</Photo>
+</skin>

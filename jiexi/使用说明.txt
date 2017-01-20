@@ -1,0 +1,19 @@
+上传根目录即可使用  如果修改目录请修改PHP文件路径 
+
+修改代码so.php （VIP视频解析）
+
+域名+/jiexi/vip.php?url=
+
+修改youku.php （C值解析）
+
+域名+/jiexi/c.php?vid=
+
+修改上面地址成你的搜索页面地址即可进行搜索了 
+
+有滚动广告.rar  替换ckplayer 就带滚动的文字广告了
+
+滚蛋广告 修改文件 ckplayer.xml
+
+播放器皮肤文件 修改 style.swf  重名为style.zip 解压即可修改LOGO什么的 
+
+CK播放器配置 手册 http://www.ckplayer.com/manual/

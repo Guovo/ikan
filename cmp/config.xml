@@ -1,0 +1,19 @@
+﻿<cmp
+name = "爱站影院"
+link = "http://www.200919.com"
+description = "%3Cfont color='#66CD00'>使用技巧①%3Cfont color='#EEC900'>【右边可以搜索你想看的影片哦，搜索可以输入几个关键字即可！建议在相关频道进行搜索】→→→→"skins = "skin5.swf"
+skin_id = "1"
+plugins = "/cmp/announce.swf"
+play_id = "1"
+auto_play = "1"
+click_play = "1"
+bgcolor = "010101"
+video_image="{src:flash.swf,xywh:[-50C,-45C,,]}"
+logo = "src:logo.swf,xywh:[-20R,20,,]}"
+logo_alpha = "1.0"
+
+announce_content = "①≮%3CFONT%20size%3D'18'%3E%3Cb%3E%3Cfont%20color%3D'%23FF00FF'%3E  【友情提醒：本滚动广告可以点击最右边的X进行关闭的！如果滚动广告给你带来不适，请点击关闭即可！】 %3C%2Ffont%3E%3C%2Fb%3E%3C%2FFONT%3E≯②≮%3CFONT%20size%3D'18'%3E%3Cb%3E%3Cfont%20color%3D'%2300FFFF'%3E  【本站有4大电影频道，全天24小时更新，为你提供最新最全的电影观看平台！请记得保存本站永久域名地址：www.200919.com】    %3C%2Ffont%3E%3C%2Fb%3E%3C%2FFONT%3E≯③≮%3CFONT%20size%3D'18'%3E%3Cb%3E%3Cfont%20color%3D'%23FF00FF'%3E 右下角有个搜索框。输入你想看的电影即可点击观看，建议在热门电影,最新电影,推荐电影,经典电影上进行搜索，09年的经典电影可以在首页进行搜索！ %3C%2Ffont%3E%3C%2Fb%3E%3C%2FFONT%3E≯"
+announce_xywh = "0,0,100P,20"
+announce_speed = "2"
+
+/>

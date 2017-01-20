@@ -1,0 +1,48 @@
+﻿<!DOCTYPE HTML>
+<html>
+<head>
+<title>播放页面</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<style>
+html, body { height:100%; margin:0px; padding:0px; overflow:hidden; text-align:center; background:#000000; }
+</style>
+<body>
+<script type="text/javascript" src="js/cmp.js"></script>
+<div id="player" style="width:100%;height:100%;"></div>
+<script type="text/javascript">
+var cmpo;
+function cmp_loaded(key) {
+	//cmp loaded
+	cmpo = CMP.get("cmp");
+	if (cmpo) {
+		//cmp callback
+		//alert(cmpo.config("version"));
+	    parent.window.document.title = cmpo.config("name");
+		cmpo.addEventListener("model_load", "cmp_model_load");
+	}
+}
+function cmp_model_load(data) {
+	parent.window.document.title = cmpo.item("label") + " - 爱看影院";
+}
+var str=window.location.search;
+var tvsrc=null;
+
+if(str){
+	var arr=str.match(/\?(\w+)=(\w+)/);
+	if(arr[1]=='php'){
+		tvsrc='/list/'+arr[2]+'.xml';
+	}else{
+		tvsrc='/list/'+arr[2]+'.xml';
+	}
+}
+
+var flashvars = {
+	name: "爱看影院",
+	lists: tvsrc,
+	api : "cmp_loaded"
+};
+var htm = CMP.create("cmp", "100%", "100%", "cmp/cmp.swf", flashvars);
+document.getElementById("player").innerHTML = htm;
+</script>
+</body>
+</html>

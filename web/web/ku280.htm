@@ -1,0 +1,36 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>无标题文档</title>
+<script src="../js/jquery-1.7.1.js" type="text/javascript"></script>
+<style>
+body,div { margin:0px; padding:0px; background:#333; border:0px; overflow:scroll; overflow:hidden; }
+</style>
+</head>
+<body>
+<div id="player" style="width:100%; height:100%;">
+	<iframe id="web" name="web" src="http://x1.ku280.com/tv/ku280.asp" frameborder="0" marginwidth="0" scrolling="no" allowtransparency="true" width="100%" height="100%"></iframe>
+</div>
+<script>
+var chorameh=document.body.scrollHeight;
+var firefoxh=document.documentElement.scrollHeight;
+if(chorameh>firefoxh){
+	document.getElementById('web').height=chorameh+'px';
+}else{
+	document.getElementById('web').height=firefoxh+'px';
+}
+$(window).load(function(){
+	$(window).resize(function(){
+		var chorame_h=document.body.scrollHeight;
+		var firefox_h=document.documentElement.scrollHeight;
+		if(chorame_h>firefox_h){
+			document.getElementById('web').height=chorame_h+'px';
+		}else{
+			document.getElementById('web').height=firefox_h+'px';
+		}
+	});
+});
+</script>
+</body>
+</html>

@@ -1,0 +1,82 @@
+﻿<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>专找视频页面</title>
+<script src="js/jquery-1.7.1.js" type="text/javascript"></script>
+<style>
+body { margin:0px; padding:0px; }
+img { border:0px; margin:0px; }
+#dh { width:100%; height:36px; background:url(images/dht.png); }
+#logo { margin-left:5px; width:110px; float:left; }
+#so { width: 160px; height:25px; text-indent:2px; float:left;border:2px solid #333; border-radius:8px; background-color:#E1E1E1; margin-top:4px; position:relative; }
+#soso { width:100px; outline:none; text-indent:6px; border:0px; font-size:13px; background-color:#fffff; position:absolute; left:4px; top:4px; height:16px; line-height:16px; }
+#btn { position:absolute; right:5px; top:2px; width:19px; height:22px; border:0px; }
+#dht { float:left; height:36px; border:0px; padding:0px; padding-left:10px; }
+#dht h2 { width:100px; height:36px; display:block; padding:0px; float:left; margin:0px; text-align:center; }
+#dht h2 a { font-weight:normal; font-size:15px; text-decoration:none; display:block; width:120px; height:36px; text-align:center; line-height:36px; color:#fff; font:微软雅黑; font-weight:bold; }
+#dht h2 a:hover,#F0385A h2 a:active { background-color:#F0385A; }
+#dh_ul { list-style:none; }
+#dh_ul li { float:left; padding-left:15px; padding-right:15px; }
+.qing { clear:both; }
+.a_bg { background-color:#F20000; }
+</style>
+<script>
+$(document).ready(function(){
+	$('#soso').focus(function(){
+		if($(this).val()=='请输入关键词搜索'){
+			$(this).val('');
+		}
+		this.parent_color=$(this).parent().css('borderColor');
+		$(this).parent().css({'borderColor':'#C00'});
+	});
+	$('#soso').blur(function(){
+		if($(this).val()==''){
+			$(this).val('请输入关键词搜索');
+		}
+		$(this).parent().css({'borderColor':this.parent_color});
+	});
+	var adha=$('#dht').find('a')
+	adha.click(function(){
+		adha.removeClass('a_bg')
+		$(this).addClass('a_bg');
+	});
+});
+$(window).load(function(){
+	$('#btn').click(function(){
+		if($('#soso').val()!='请输入关键词搜索'&&$('#soso').val()!=' '){
+			var oVal=$.trim($('#soso').val());
+			var oUrl=encodeURI(oVal);
+			parent.frames['tv'].location.href='list.htm?key='+oUrl;
+		}
+	});
+});
+function play(play_id){
+	var play_id=play_id;
+	var arr=play_id.split('=');
+	if(arr[0]=='web'){
+		window.top.frames['play'].location.href='web/'+arr[1]+'.htm';
+	}else{
+		window.top.frames['play'].location.href='play.htm/?'+play_id;
+	}
+}
+</script>
+</head>
+<body>
+<div id="dh">
+	<div id="logo">
+    	<a><img src="images/logo.png"></a>
+    </div>
+
+    <div id="dht">
+       <h2><a href="http://www.200919.com" target="_parent">首页</a></h2>
+       <h2><a href="/remen.htm" target="_self">热门电影</a></h2>
+       <h2><a href="/tuijian.htm" target="_self">推荐电影</a></h2>
+       <h2><a href="/zuixin.htm" target="_self">最新电影</a></h2>
+        <h2><a href="javascript:play('web=baidu');">音乐盒子</a></h2>
+       <h2><a href="http://www.200919.com/web/down.htm" target="_blank">视频下载</a></h2>
+        <h2><a href="javascript:play('web=zhanzhang');">站长</a></h2>
+	</div>
+</div>
+</body>
+</html>

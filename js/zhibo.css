@@ -1,0 +1,26 @@
+/*处理ie6下 fixed问题*/
+*body{background-image:url(about:blank);background-attachment:fixed;/*必要，防抖动*/}
+*html{background-image:url(about:blank);background-attachment:fixed;}
+body {font-family: "宋体";font-size: 13px;margin:0 auto;padding:0;color:#777777; background: #333333;}
+div, form, img, ul, ol, li, dl, dt, dd {margin: 0;padding: 0;border:0;}
+li {list-style-type:none;}
+* {margin:0;padding:0;}
+em,h1,h2,h3,h4,h5,h6,i {font-size:100%;font-style:normal;}
+img{border:0}
+body, html {height:100%;}
+em {font-weight:normal;}
+
+/* link */
+a{color: #777777;text-decoration:none;}
+a:visited {}
+a:hover {color: #ffffff;text-decoration:none;}
+a:active {}
+/*foot*/
+.indexfooter {float:left;width:100%;background:#F8F8F8 url(img/foot.jpg) repeat-x;margin-top: 1px;}
+.indexfooter .foot{ width:990px; height:1px; margin:0 auto; line-height:25px;color:#666666;text-align:center; margin-top:1px;}
+.indexfooter .foot .f_about{ width:575px; height:1px; margin:0 auto 15px;}
+.indexfooter .foot .f_about ul{}
+.indexfooter .foot .f_about li{ float:left; width:115px; height:1px; font: normal 18px/30px "微软雅黑"; color:#666666; padding-top:14px; }
+.indexfooter .foot .f_about .foot4{ width:115px; height:1px; overflow:hidden; background:url(img/foot_2.png) no-repeat center;}
+.indexfooter .foot .f_about li a { color:#999; padding:3px 21px;}
+.indexfooter .foot .f_about li a:hover{ color:#FFF;background:#666; border-radius:2px;}

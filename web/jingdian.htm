@@ -1,0 +1,46 @@
+﻿
+<html>
+<head>
+<title>经典电影播放页面</title>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+<style type="text/css">
+html, body { height:100%; margin:0; padding:0; overflow:hidden; text-align:center; background:#000000; }
+</style>
+
+<body>
+<script type="text/javascript" src="/js/cmp.js"></script>
+
+<div id="player" style="width:100%;height:100%;"></div>
+
+<script type="text/javascript">
+
+
+var cmpo;
+function cmp_loaded(key) {
+	//cmp loaded
+	cmpo = CMP.get("cmp");
+	if (cmpo) {
+		//cmp callback
+		//alert(cmpo.config("version"));
+	    parent.window.document.title = cmpo.config("name");
+		cmpo.addEventListener("model_load", "cmp_model_load");
+	}
+}
+function cmp_model_load(data) {
+	parent.window.document.title = cmpo.item("label") + "- 百年经典电影_爱看影院_首播影院_新视觉影院_青苹果影院_YY影院_最新最全高清影院";
+}
+var flashvars = {
+	name: "爱看影院",
+	url: "http://player.wang988.com/1/dy2/config.php",
+	lists: "http://player.wang988.com/1/dy2/juxing.xml",
+	api : "cmp_loaded"
+};
+var htm = CMP.create("cmp", "100%", "100%", "https://t90dyss.duapp.com/player.swf", flashvars);
+document.getElementById("player").innerHTML = htm;
+</script>
+
+
+</body>
+
+
+</html>
